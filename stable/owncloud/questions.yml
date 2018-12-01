@@ -1,0 +1,22 @@
+    categories:
+    - Utils
+    questions:
+    - variable: persistence.enabled
+    default: "false"
+    description: "Enable persistent volume for OwnCloud"
+    type: boolean
+    required: true
+    label: OwnCloud Persistent Volume Enabled
+    show_subquestion_if: true
+    group: "OwnCloud Settings"
+    subquestions:
+    - variable: persistence.size
+        default: "15Gi"
+        description: "OwnCloud Persistent Volume Size"
+        type: string
+        label: OwnCloud Volume Size
+    - variable: persistence.storageClass
+        default: ""
+        description: "If undefined or null, uses the default StorageClass. Default to null"
+        type: storageclass
+        label: Default StorageClass for OwnCloud
