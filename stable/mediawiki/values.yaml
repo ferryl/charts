@@ -32,7 +32,7 @@ mediawikiUser: admin
 ## Defaults to a random 10-character alphanumeric string if not set
 ## ref: https://github.com/bitnami/bitnami-docker-mediawiki#environment-variables
 ##
-mediawikiPassword: password
+# mediawikiPassword: password
 
 ## Admin email
 ## ref: https://github.com/bitnami/bitnami-docker-mediawiki#environment-variables
